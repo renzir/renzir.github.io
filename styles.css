@@ -1,0 +1,539 @@
+/* 	RESET	 */
+
+*{
+		box-sizing: border-box;
+		
+		
+							
+}
+
+body{
+	
+		margin:0;
+		background:#000000;
+		color:#000000;
+		background-color: gainsboro;
+		/*background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='88' height='24' viewBox='0 0 88 24'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='autumn' fill='%23a5a5a5' fill-opacity='0.41'%3E%3Cpath d='M10 0l30 15 2 1V2.18A10 10 0 0 0 41.76 0H39.7a8 8 0 0 1 .3 2.18v10.58L14.47 0H10zm31.76 24a10 10 0 0 0-5.29-6.76L4 1 2 0v13.82a10 10 0 0 0 5.53 8.94L10 24h4.47l-6.05-3.02A8 8 0 0 1 4 13.82V3.24l31.58 15.78A8 8 0 0 1 39.7 24h2.06zM78 24l2.47-1.24A10 10 0 0 0 86 13.82V0l-2 1-32.47 16.24A10 10 0 0 0 46.24 24h2.06a8 8 0 0 1 4.12-4.98L84 3.24v10.58a8 8 0 0 1-4.42 7.16L73.53 24H78zm0-24L48 15l-2 1V2.18A10 10 0 0 1 46.24 0h2.06a8 8 0 0 0-.3 2.18v10.58L73.53 0H78z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+		*/
+		font-size:16px;
+		font-family: 'Open Sans', sans-serif;
+	}
+
+a{
+		text-decoration:none;
+		color:#000000;
+				
+	}
+
+ul{
+		list-style:none;
+				
+	}
+.container{
+		width:%100;
+		height:%100;
+		}
+		
+
+	/* SHOWCASE */
+	
+/*   Navigation  */
+
+.nav-main{
+
+		display:flex;
+		flex:top;
+		position:absolute;
+		top:0;
+		left:0;
+		height:150px;
+		font-size:17px;
+		width: 100% ;
+		background-image: linear-gradient(to top, rgba(255,0,0,0), rgba(27,96,181,1) 20%);
+		
+		justify-content: space-between;
+		position: fixed;
+		z-index: 100;
+		color:white;
+						
+	}
+
+	/* NAV LEFT */
+.nav-main {
+		display:flex;
+		
+		justify-content:space-between;
+		
+		align-items:center;
+										
+	}
+/* logo */
+.nav-brand{					
+		width:18%;
+		height:120px;
+		padding:1% 0 ;
+		opacity:1;
+
+	}
+/* titulo */
+.nav-title{
+		font-family: 'Rock Salt', cursive;
+		font-size: 130%;
+		letter-spacing: 5px;
+		padding:1% 0;
+		
+}
+
+ul.nav-menu{
+		display:flex;	
+		color:white;			
+	}
+ul.nav-menu li{
+		padding:10px;
+		
+	}
+ul.nav-menu li a{
+		color:white;	
+		font-weight:500;
+		
+	}
+ul.nav-menu li:hover{
+		
+		background-color: grey;
+		z-index:150;
+					
+	}
+					
+	
+.nav-main  ul.nav-menu-right{
+	
+		
+		padding:6px 10px;
+		margin-right:2%;
+		
+}
+
+li.menu-btn{
+	
+		display:none;
+	
+}
+
+
+
+
+	
+.showcase{
+		
+		display:flex;	
+		width:100%;
+		height:auto;
+		padding:-200px 0px;
+		 /*no-repeat	 center center/cover;*/
+	
+		
+		
+				
+	}
+img.showcase-portada{
+	
+		
+		width:100%;
+		
+	
+	
+}
+
+		/*	
+
+.showcase__texto{
+		
+				
+		display:flex;
+		margin: 10px 100px;
+		width: 500px;
+		padding: 10px 10px;
+		background-color: rgba(242, 236, 235, 0.8);
+		border-radius: 20px;
+		text-align:center;
+}
+.sho*/
+	
+.btn{
+		cursor:pointer;
+		display:inline-block;
+		border:0;
+		font-weight:bold;
+		padding:10px 20px;
+		background:#262626;
+		color:#ffffff;
+		font-size:15px;
+		border:1px solid #ffffff;
+		margin:10px 0;
+					
+	}
+	
+.btn:hover{	
+		opacity: .7;
+		}
+
+
+main.main{
+	
+		
+   margin: 0px;
+   padding: 0px;
+   display: -webkit-flex;
+   display:         flex;
+   -webkit-flex-wrap:wrap;
+	
+}
+
+		
+/* NEW CARDS */
+.news-cards	{
+	
+		display:flex;
+		flex:75;
+		margin:10px 0;
+		flex-direction:row;
+   -webkit-flex-wrap:wrap;
+		
+		
+		
+	
+		}	
+article{
+	
+		flex:6 0 100%;	
+		padding:2% 1%;
+		margin:0 1%;
+		border: 10px solid gainsboro;
+		background-color:white;
+		font-size:10px;	
+		
+		
+}
+article.img-right{
+	
+	
+	
+}
+div.card{
+		padding:5%;
+		display:flex;
+			flex-direction:column;
+		
+		
+}
+
+article{
+	
+	padding:6%;
+	
+}
+
+article img{	
+		
+		width:100%;
+		height:60%;
+			
+		
+	}
+
+
+/*		ASIDE	*/
+aside.main-aside{
+		display:flex;
+		flex:25%;
+		width:100%;
+		margin:10px 0 ;
+		flex-direction:column;
+		
+		
+			
+	}
+/*	CARDS BANNER ONE 	*/
+
+.cards-banner-one{
+	
+		
+		weight:100%;
+		height:50%;
+		/*background:url('./img/new2.jpg')  no-repeat center center/cover;*/
+		background-color:grey;
+}
+.cards-banner-one .content{
+	
+		width:44%;
+		padding:10px 0 0 30px;
+		color:#FFFEFE;
+		
+}
+.cards-banner-one p ,
+.cards-banner-one h2{
+	
+		margin:10px 0 20px 0; 
+		
+}
+/*	 CARDS BANNER TWO		*/
+
+.cards-banner-two {
+		
+		width:100%;
+		height:50%;
+		background-color:grey;
+		/*background:url('./img/banner3.jpg')  no-repeat center center/cover;*/
+		
+		
+}
+
+.cards-banner-two .content {
+		
+		width:40%;
+		padding:90px 0 0 30px;
+		color:white;
+		
+		
+} 
+/*		SOCIAL			*/	
+.follow{
+		
+		
+		margin:50px;
+		
+		
+}
+.follow p{
+		
+		text-align:center;
+		font-size:25px;
+		margin-bottom:20px;
+		
+}
+.follow p span {
+	
+		font-family: 'Rock Salt', cursive;
+		font-size: 20px;
+}
+.follow div{
+	
+		
+		display:flex;
+		align-items:center;
+		justify-content:center;
+		
+		
+		
+}
+.follow div a{
+		margin:0 10px;
+		
+}
+.follow div a  i{
+	
+		font-size:3rem
+}
+
+/*		footer links		*/
+
+footer{
+		width:100%;
+		display:flex;
+		margin:10px 10px;
+		flex-wrap:wrap;
+		align-content:center;
+		justify-content:space-around;
+		background-color:black;
+		
+		
+}
+footer ul.links{
+	
+		
+	
+		
+}
+footer ul li a{
+
+		
+		color: azure;
+		font-size:12px;
+		line-height:3;
+
+}
+@media (max-width:800px){
+	
+		/* 				BARRA DE MENU	------			 */
+		nav.nav-main{
+
+			width:100%;	
+			align-items:center;
+			height:180px;
+			
+		}
+	/*	titulo	*/
+		.nav-title{
+			font-size:100%;
+			position:absolute;
+			top:30px;
+			right:170px;
+				
+		}
+		.nav-brand{
+			
+			width:30%;
+			
+			
+		}
+		
+		
+	/*	menu responsise	*/
+	
+		ul.nav-menu{
+			
+			background-image: linear-gradient(to top, rgba(255,0,0,0), rgba(27,96,181,1) 2%);
+			display:none;
+			position:absolute;
+			top:130px;
+			right:0;
+			width:100%;
+			height:auto;
+			
+			
+			}
+		ul.nav-menu li{
+				
+			border-top:2px solid black;
+			margin:2% 0;
+				
+		}
+			
+		li a:hover{
+			
+			
+			background-color:grey;
+		}
+		li.menu-btn{
+		
+			display:block;
+			position:absolute;
+			top:45px;
+			right:30px;
+			overflow: auto
+			
+		
+}		
+
+		li.lupa-btn{
+			
+			display:block;
+			position:absolute;
+			top:60px;
+			right:110px;
+		}
+		
+		li.menu-btn{
+			
+			display:block;
+			position:absolute;
+			top:45px;
+			right:20px;
+		}
+		
+		li.menu-btn:click{
+			
+			background-color:grey;
+			
+		}
+		
+		/*		ARTICULO  	*/
+		
+		main.main{
+			
+			height:auto;
+			
+		   display:block;
+	
+}
+
+		div.news-cards article{
+			
+			display:flex;
+			padding:10px 10px;	
+			flex:100%;
+		
+}
+		div.card{
+			display:flex;
+			flex-direction:column;
+			
+	
+	
+}
+		article.new img{
+			
+			width:50%;
+			height:auto;
+		}
+		/*		BANNER */
+		
+		aside.main-aside{
+			display:block;
+			
+			margin:10px 0;
+			
+		
+			
+	}
+		}
+		.cards-banner-one .content{
+			
+			width:60%;
+		}
+
+		.cards-banner-two .content{
+			
+			width:60%;
+			
+		}
+		
+		
+} 	
+@media (min-width:1500px){
+		
+		
+		.container
+		{
+				
+				padding:0 10%;
+		}
+}
+
+@media (min-width:2000px){
+	
+		
+		.container{
+				
+				padding: 5% 15%;
+		}
+		
+		.nav-main{
+			height:200px;
+		}
+		.nav-brand{	
+		margin-left:10%;		
+		width:10%;
+		height:90%;
+		}
+		.nav-title{
+		
+		font-size: 180%;
+		letter-spacing:10px;
+		}
+		
+		
+
+	
+		
+}
