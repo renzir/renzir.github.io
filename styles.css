@@ -3,27 +3,27 @@
 *{
 		box-sizing: border-box;
 		
-		
 							
 }
-
 body{
 	
 		margin:0;
-		background:#000000;
+		padding:0;
 		color:#000000;
-		background-color: gainsboro;
-		/*background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='88' height='24' viewBox='0 0 88 24'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='autumn' fill='%23a5a5a5' fill-opacity='0.41'%3E%3Cpath d='M10 0l30 15 2 1V2.18A10 10 0 0 0 41.76 0H39.7a8 8 0 0 1 .3 2.18v10.58L14.47 0H10zm31.76 24a10 10 0 0 0-5.29-6.76L4 1 2 0v13.82a10 10 0 0 0 5.53 8.94L10 24h4.47l-6.05-3.02A8 8 0 0 1 4 13.82V3.24l31.58 15.78A8 8 0 0 1 39.7 24h2.06zM78 24l2.47-1.24A10 10 0 0 0 86 13.82V0l-2 1-32.47 16.24A10 10 0 0 0 46.24 24h2.06a8 8 0 0 1 4.12-4.98L84 3.24v10.58a8 8 0 0 1-4.42 7.16L73.53 24H78zm0-24L48 15l-2 1V2.18A10 10 0 0 1 46.24 0h2.06a8 8 0 0 0-.3 2.18v10.58L73.53 0H78z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-		*/
+		background-color: #D9DCD6;
 		font-size:16px;
 		font-family: 'Open Sans', sans-serif;
+		
+		
 	}
+
 
 a{
 		text-decoration:none;
 		color:#000000;
 				
 	}
+	
 
 ul{
 		list-style:none;
@@ -32,94 +32,136 @@ ul{
 .container{
 		width:%100;
 		height:%100;
+		
 		}
 		
 
 	/* SHOWCASE */
 	
+/*---------------------------------------------------------------------------------------------------------------------------HEADER*/
 /*   Navigation  */
 
 .nav-main{
-
-		display:flex;
-		flex:top;
-		position:absolute;
+		
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display:flex;	
+		position: fixed;
 		top:0;
 		left:0;
-		height:150px;
+		height:110px;
 		font-size:17px;
-		width: 100% ;
-		background-image: linear-gradient(to top, rgba(255,0,0,0), rgba(27,96,181,1) 20%);
-		
+		width: 100%;
+		background-color:transparent;   /*image: linear-gradient(to top, rgba(255,0,0,0), rgba(27,96,181,1) 10%);*/
 		justify-content: space-between;
-		position: fixed;
-		z-index: 100;
+		align-items:center;
 		color:white;
-						
+			
 	}
+.nav-main:focus{
+		
+		background-color:transparent;
+	
+		
+}
 
 	/* NAV LEFT */
-.nav-main {
-		display:flex;
-		
-		justify-content:space-between;
-		
-		align-items:center;
-										
-	}
+
 /* logo */
 .nav-brand{					
 		width:18%;
 		height:120px;
 		padding:1% 0 ;
 		opacity:1;
+		
 
 	}
 /* titulo */
 .nav-title{
 		font-family: 'Rock Salt', cursive;
-		font-size: 130%;
+		font-size: 140%;
 		letter-spacing: 5px;
 		padding:1% 0;
+		text-align:center;
 		
+}
+.nav-title-res{
+	
+		display:none;
 }
 
 ul.nav-menu{
 		display:flex;	
-		color:white;			
+		color:white;
+		margin:20px 0;
 	}
+
 ul.nav-menu li{
-		padding:10px;
+		padding:1%;
+		color:white;
 		
-	}
-ul.nav-menu li a{
+	}	
+li a {
 		color:white;	
 		font-weight:500;
+		 text-decoration: none;
 		
 	}
-ul.nav-menu li:hover{
+
 		
+li a:hover{
+		
+		 background-color: #D9DCD6;
+		color: black;
+	
+					
+	}
+	
+li a:active{
+		
+		background-color: #81C3D7;
+		color: white;
+		
+					
+	}					
+
+
+
+
+  /*-----------------------------------------*/
+
+.dropdown {
+		  position: relative;
+		  display: inline-block;
+}
+
+.dropdown-content {
+		display: none;
+		position: absolute;
+		min-width: 160px;
+		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+		z-index: 1;
+}
+.dropdown-content > a {
+		background-color:grey;
+		color:black;
+		padding: 12px 16px;
+		text-decoration: none;
+		display: block;
+}
+
+.dropdown-content a:hover {
+		background-color: rgba(27,96,181,1);
+}
+
+.dropdown:hover .dropdown-content {
+		display: block;
+}
+
+.dropdown:hover .dropbtn {
 		background-color: grey;
-		z-index:150;
-					
-	}
-					
-	
-.nav-main  ul.nav-menu-right{
-	
-		
-		padding:6px 10px;
-		margin-right:2%;
-		
 }
-
-li.menu-btn{
-	
-		display:none;
-	
-}
-
-
+/*-------------------------------------------------*/
 
 
 	
@@ -127,37 +169,40 @@ li.menu-btn{
 		
 		display:flex;	
 		width:100%;
-		height:auto;
-		padding:-200px 0px;
+		
+		
+		
 		 /*no-repeat	 center center/cover;*/
-	
-		
-		
 				
 	}
-img.showcase-portada{
+
 	
+div.portada{
+		display:flex;
+		width:100%;
+		min-height:110px;
+		height:100vh;
+		}
+div.portadasinfoto{
+		
+		
+		display:flex;
+		width:100%;
+		min-height:110px;
+		
+		
+}		
+
+
+img.showcase-portada{
 		
 		width:100%;
-		
+		padding:100px 0 0 0;
 	
 	
 }
 
-		/*	
-
-.showcase__texto{
-		
-				
-		display:flex;
-		margin: 10px 100px;
-		width: 500px;
-		padding: 10px 10px;
-		background-color: rgba(242, 236, 235, 0.8);
-		border-radius: 20px;
-		text-align:center;
-}
-.sho*/
+	
 	
 .btn{
 		cursor:pointer;
@@ -165,9 +210,9 @@ img.showcase-portada{
 		border:0;
 		font-weight:bold;
 		padding:10px 20px;
-		background:#262626;
+		background:#16425B;
 		color:#ffffff;
-		font-size:15px;
+		border-radius:7px;
 		border:1px solid #ffffff;
 		margin:10px 0;
 					
@@ -176,126 +221,261 @@ img.showcase-portada{
 .btn:hover{	
 		opacity: .7;
 		}
+		
+		
+		
+		
+
+li.icon{
+	
+		display:none;
+	
+}
 
 
+
+
+/*-----------------------------------------------------------------------------------------------------HEADER-----------------MAIN*/
 main.main{
 	
 		
    margin: 0px;
    padding: 0px;
    display: -webkit-flex;
-   display:         flex;
-   -webkit-flex-wrap:wrap;
+	display:   flex;
+
+	z-index:1;
+
+	
 	
 }
 
-		
-/* NEW CARDS */
-.news-cards	{
+/*--------------------links directos------------	ATENCION!!!!!!EN DESUSO*/
+
+div.links{
 	
-		display:flex;
-		flex:75;
-		margin:10px 0;
-		flex-direction:row;
-   -webkit-flex-wrap:wrap;
+	display:flex;
+	justify-content:space-around;
+	
+	
+	
+}
+div.links a{
+	padding:10px 20px;
+	margin:0 10px;
+	font-weight:400;
+	color:white;
+	box-shadow:5px 5px 5px grey;
+	letter-spacing:4px;
+	font-size:1.5rem;
+	background-color:#2F6690;
+	border-radius:10px;
+}
+div.links > a:hover{
+	
+	opacity:0.5;
+	
+}
+
+
 		
+/* -----------------------------------------------------------------NEW CARDS */
+.news-cards	{
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display:flex;
+		display:box;		
+		padding:0 1%;
+		flex:75;
+		flex-direction:column;
 		
 		
 	
 		}	
-article{
-	
-		flex:6 0 100%;	
-		padding:2% 1%;
-		margin:0 1%;
-		border: 10px solid gainsboro;
-		background-color:white;
-		font-size:10px;	
-		
-		
-}
-article.img-right{
-	
-	
-	
-}
-div.card{
-		padding:5%;
+
+
+.new{
 		display:flex;
-			flex-direction:column;
-		
+		display:-webkit-box;
+		display:-webkit-flexbox;
+		display:box;
+		border-radius:15px;
+		height:400px;
+		background-color:white;
+		font-size:10px;
+		box-shadow: 10px 10px 10px grey;
+		margin:1%;
+		overflow:hidden;
 		
 }
 
-article{
-	
-	padding:6%;
-	
-}
 
-article img{	
+/*------------------------------------------------------BLOG*/
+article.blog{
 		
+		display:flex;
 		width:100%;
-		height:60%;
+		flex-flow:row wrap;
+		
+}
+article.blogsinfoto{
+		
+		display:flex;
+		width:100%;
+		margin:10% 0 0 0;
+		
+		flex-flow:column wrap;
+		
+}
+
+div.blog-left{
+	
+		
+		flex:25;
+		padding:2%;
+		text-align:center;
+	
+}
+div.blog-right{
+		
+		flex:25;
+		padding:2%;
+		text-align:center;
+}
+
+div.blog-center{
+		
+		display:flex;
+		flex:50%;
+		padding:1%;
+		flex-direction:column;
+		align-items:center;
+		padding:20px;
+		
+		
+	
+}
+div.blog-center p{
+	
+		
+}
+div.blog-center h2{
+		
+		font-size:36px;
+		font-weight:800;
+		width: 100%;
+		display: block;
+}
+
+div.blog-center strong{
+		
+		
+		width: 100%;
+		display: block;
+}
+
+img.ruta-blog-img{
+	
+		width:100%;
+		
+	
+}
+img.img-blog{
+	
+		width:50vw;
+}
+		
+/*-----------------------------------------------INICO-------BLOG*/
+
+div.card{
+	
+		width:50%;
+		padding:2% 4%;
+		text-align:left;
+		order:1;
+		font-size:1rem;
+		
+		
+}
+div.card > h4{
+	
+		color:#16425B;
+		margin:10px 0;
+		font-weight:bold;
+}
+div.card > h2 {
+		font-size: 36px;
+		font-weight:800;
+		margin:0;
+		
 			
+}
+div.card a.btn{
+	
+		box-shadow:5px 5px 5px grey;
+		
+}
+img.img-inicio{	
+		display:-webkit-flex;
+		display:-webkit-box;
+		display:flex;
+		order:2;
+		width:45%;
 		
 	}
 
 
-/*		ASIDE	*/
+figure {
+		display: flex;
+		flex-flow: column;
+		
+		width:100%;
+		flex-flow:column nowrap;
+	
+}
+
+
+figcaption {
+		background-color: #222;			
+		color: #fff;
+		font: italic smaller sans-serif;
+		padding: 3px;
+		width:100%;
+		text-align: center;
+		width:100%;
+}
+	
+
+/*		----------------------------------------ASIDE	*/
 aside.main-aside{
+		display:-webkit-flex;
+		display:box;
 		display:flex;
 		flex:25%;
-		width:100%;
-		margin:10px 0 ;
-		flex-direction:column;
+		height:auto;
+		padding:4%;
+		border-radius:10px;
+		background-color:#81C3D7;
+		margin:1% 0;
+		box-shadow: 10px 10px 10px grey;
 		
 		
 			
 	}
-/*	CARDS BANNER ONE 	*/
-
-.cards-banner-one{
+.banner-blog{
 	
-		
-		weight:100%;
-		height:50%;
-		/*background:url('./img/new2.jpg')  no-repeat center center/cover;*/
-		background-color:grey;
-}
-.cards-banner-one .content{
-	
-		width:44%;
-		padding:10px 0 0 30px;
-		color:#FFFEFE;
-		
-}
-.cards-banner-one p ,
-.cards-banner-one h2{
-	
-		margin:10px 0 20px 0; 
-		
-}
-/*	 CARDS BANNER TWO		*/
-
-.cards-banner-two {
-		
 		width:100%;
-		height:50%;
-		background-color:grey;
-		/*background:url('./img/banner3.jpg')  no-repeat center center/cover;*/
+		background-color:#81C3D7;
 		
-		
-}
+		padding:5%;
+		height:100%;
 
-.cards-banner-two .content {
-		
-		width:40%;
-		padding:90px 0 0 30px;
-		color:white;
-		
-		
-} 
+}	
+
+
+	
+/*------------------------------------------------------------------------------------------------------------------------FINMAIN*/
+ 
 /*		SOCIAL			*/	
 .follow{
 		
@@ -304,19 +484,19 @@ aside.main-aside{
 		
 		
 }
-.follow p{
+.follow > p{
 		
 		text-align:center;
 		font-size:25px;
 		margin-bottom:20px;
 		
 }
-.follow p span {
+.follow > p > span {
 	
 		font-family: 'Rock Salt', cursive;
 		font-size: 20px;
 }
-.follow div{
+.follow > div{
 	
 		
 		display:flex;
@@ -326,11 +506,11 @@ aside.main-aside{
 		
 		
 }
-.follow div a{
+.follow > div > a{
 		margin:0 10px;
 		
 }
-.follow div a  i{
+.follow > div > a > i{
 	
 		font-size:3rem
 }
@@ -344,17 +524,17 @@ footer{
 		flex-wrap:wrap;
 		align-content:center;
 		justify-content:space-around;
-		background-color:black;
+		background-color:#16425B;
 		
 		
 }
-footer ul.links{
+footer > ul.links{
 	
 		
 	
 		
 }
-footer ul li a{
+footer > ul > li > a{
 
 		
 		color: azure;
@@ -362,178 +542,195 @@ footer ul li a{
 		line-height:3;
 
 }
-@media (max-width:800px){
+@media (max-width:1000px){/*----------------------------------------------------------------------------------------CELULARRRRR*/
 	
 		/* 				BARRA DE MENU	------			 */
 		nav.nav-main{
 
-			width:100%;	
-			align-items:center;
-			height:180px;
+			width:100%;
+			height:150px;
+			justify-content:flex-start;
+			
+			
 			
 		}
+		
 	/*	titulo	*/
-		.nav-title{
-			font-size:100%;
-			position:absolute;
-			top:30px;
-			right:170px;
-				
+		div.nav-title{
+			
+			display:none;
+		}
+		div.nav-title-res{
+			
+			display:flex;
+			font-size:35px;
+			font-family: 'Rock Salt', cursive;
+			letter-spacing: 5px;
+			padding:1% 0;
+			text-align:left;
 		}
 		.nav-brand{
 			
 			width:30%;
+			padding:1%;
+			margin:-1% 2%;
 			
-			
+
 		}
 		
 		
 	/*	menu responsise	*/
 	
+		
 		ul.nav-menu{
 			
-			background-image: linear-gradient(to top, rgba(255,0,0,0), rgba(27,96,181,1) 2%);
-			display:none;
-			position:absolute;
-			top:130px;
-			right:0;
+			display:block;
+			background-color:#2F6690;
 			width:100%;
-			height:auto;
+			z-index:2;
+			position:absolute;
+			top:0;
+			right:0;
+			z-index:50;
 			
 			
 			}
-		ul.nav-menu li{
-				
-			border-top:2px solid black;
-			margin:2% 0;
-				
+		ul.nav-menu li.child{
+			
+			display: block;	
+			font-size:30px;
+			padding:3% 2%;
+			border-bottom:2px solid black;
+			
 		}
+		ul.nav-menu li:first-child{
+		
+			
+			display: block;	
+			width:15%;
+			
+			position:absolute;
+			right:0;
+			
+		}
+		
+		
+		
+		ul.nav-menu li a,
+		ul.nav-menu li div.dropbtn{
+			
+			  display: block;
+			  color: #f2f2f2;
+			  text-decoration: none;
+			  font-size: 40px;
+			  text-align:center;
+			  
+			
+		}
+		
 			
 		li a:hover{
-			
-			
 			background-color:grey;
-		}
-		li.menu-btn{
-		
-			display:block;
-			position:absolute;
-			top:45px;
-			right:30px;
-			overflow: auto
 			
-		
-}		
+		}
 
-		li.lupa-btn{
-			
-			display:block;
-			position:absolute;
-			top:60px;
-			right:110px;
-		}
+		.nav-menu .responsive li.icon {
+			position: absolute;
+			right: 0;
+			top: 0;
+		  }
+		.nav-menu.responsive li.child {
+			display:none;
+		  }
+		  
+		img.showcase-portada{
+			height:100%;
 		
-		li.menu-btn{
-			
-			display:block;
-			position:absolute;
-			top:45px;
-			right:20px;
 		}
-		
-		li.menu-btn:click{
+		div.portada{
 			
-			background-color:grey;
-			
+			height:100%;
 		}
+
+	
 		
-		/*		ARTICULO  	*/
 		
 		main.main{
 			
-			height:auto;
-			
-		   display:block;
-	
-}
-
-		div.news-cards article{
-			
 			display:flex;
-			padding:10px 10px;	
-			flex:100%;
+			flex-flow:column nowrap;
+		}
+		div.links a{
+			font-size:2.3rem;
+			
+		}
 		
-}
-		div.card{
-			display:flex;
+		article.blog{
 			flex-direction:column;
+			order:2;
 			
-	
-	
-}
-		article.new img{
-			
-			width:50%;
-			height:auto;
-		}
-		/*		BANNER */
-		
-		aside.main-aside{
-			display:block;
-			
-			margin:10px 0;
-			
-		
-			
-	}
-		}
-		.cards-banner-one .content{
-			
-			width:60%;
-		}
-
-		.cards-banner-two .content{
-			
-			width:60%;
 			
 		}
-		
-		
+		img.img-blog{
+			
+			width:100%;
+		}
+		aside.aside-main{
+			
+			order:1;
+		}
 } 	
-@media (min-width:1500px){
-		
-		
-		.container
-		{
-				
-				padding:0 10%;
-		}
-}
 
-@media (min-width:2000px){
+
+@media (min-width:1800px){
 	
 		
-		.container{
-				
-				padding: 5% 15%;
-		}
 		
 		.nav-main{
-			height:200px;
+			height:190px;
+			width:100%;
+			justify-content:space-around;
+			
 		}
 		.nav-brand{	
-		margin-left:10%;		
-		width:10%;
-		height:90%;
+			margin-left:10%;		
+			width:10%;
+			height:90%;
 		}
-		.nav-title{
-		
-		font-size: 180%;
-		letter-spacing:10px;
+		div.nav-title{
+			
+				display:none;
+		}
+		div.nav-title-res{
+			
+			display:flex;
+			font-size:45px;
+			font-family: 'Rock Salt', cursive;
+			letter-spacing: 5px;
+			padding:1% 0;
+			text-align:center;
 		}
 		
+		.nav-menu a.icon {
+		float: right;
+		display: block;
+  }
+		.showcase{
+			
+			padding: 0 10%;
+		}
+		main.main{
+			padding:0 10%;
+		}
 		
 
+		img.ruta-blog-img{
+			
+			display:flex;
+			width:60%;
+		}
+		img.img-blog{
+			width:45vw;
 	
+		}		
 		
-}

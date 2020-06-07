@@ -15,7 +15,9 @@
 	
 	<!-- FONT Rock TITULo-->
 	<link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet">
-
+	
+	<!--	TITULO   -->
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap" rel="stylesheet">
 	
 	<!-- FONT BLOG-->
 	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
@@ -23,55 +25,62 @@
 </head>
 <body>
 	
+
 	<div class="container">
 		
 		<!--  SHOWCASE -->
 		
 		<header class="showcase">
 		<nav class="nav-main">
-			<img src="img/12kmporhora.png" alt="12kmporhora Logo" class="nav-brand" >
-			<strong class="nav-title">rutas<br/> &nbsp   infinitas</strong>
-			<ul class="nav-menu" id="btn-menu">
-			
-				<li>
+			<img src="img/logo.png" alt="12kmporhora Logo" class="nav-brand" >
+			<div class="nav-title">Rutas   Infinitas</div>
+			<div class="nav-title-res">Rutas Infinitas</div>
+			<ul class="nav-menu" id="menu">
+				
+				<li class="icon" id="menu-boton" style="font-size:80px;">
+							
+					<a href="javascript:void(0);" class="btn" >&#9776;</a>
+						
+				</li>
+				<li class="child">
 					<a href="#">INICIO</a>
 				</li>
-				<li>
-					<a href="#">NOSOTROS</a>
+				<li class="child">
+					<a href="nosotros.html">NOSOTROS</a>
 				</li>
-				<li>
-					<a href="#">RUTA</a>
+				<li class="child">
+					<div class="dropdown-main">
+					  <div class="dropbtn"><a href="viaje.html">VIAJES</a></div>
+					  <div class="dropdown-content">
+						<a href="ruta.html">Uruguay</a>
+						<a href="#">Argentina</a>
+						<a href="#">Chile</a>
+						<a href="#">Brasil</a>
+					  </div>
+					</div>
 				</li>
-				<li>
+				<li class="child">
 					<a href="#">HISTORIAS</a>
 				</li>
-				<li>
+				<li class="child">
 					<a href="#">GALERIA</a>
 				</li>
-				<li>
+				<li class="child">
 					<a href="#">LIBROS</a>
 				</li>		
-			 	<li>
+			 	<li class="child">
 					<a href="#">COMO AYUDAR</a>
 				</li>
-				</ul>
-				<ul class="nav-menu-right">
-						<li class="lupa-btn">
-						<a href="#">
-						<i class="fas fa-search"  style="color:white;"></i>
-						</a>
-						</li>
-						<li class="menu-btn" onclick="open()">
+				
 						
-						<i class="fa fa-bars fa-3x"></i>
-						</li>
 				</ul>
+				
 					
 					
 			
 		</nav>
 		
-			<div class="showcase__texto">
+			<div class="portada">
 				<img src="img/portada.jpg" class="showcase-portada"> 	
 				
 			</div>
@@ -79,132 +88,137 @@
 		
 		<main class="main">
 		<!--   CARDS -->
-		<div class="news-cards">
+		<article class="blog">
 		
 				<article class="new">
-					<img src="img/card1.jpg" alt="New1">
+					<img src="img/card1.jpg" class="img-inicio">
+					<div class="card">
+						<h4>Argentina</h4>
+						<h2>Capilla de Marmol</h2>
+						<h6>04 junio,2020</h6>
+						<p>Y seguimos pedaleando por la austal y conociendo gente bella en la ruta.El tramo hasta Villa O'Higgins lo compartimos con Nico, Feña, Jeremy y Jessica. Cuanto mas mejor! Un acenso de 380 metros nos dejo liquidados antes de llegar a Yungay[...] 
+						
+						</p>
+						
+						<a href="#" class="btn">Ver mas&nbsp;<i class="fa fa-angle-double-right"></i></a>
+					</div>
+				</article>	
+				<article class="new">
+					<img src="img/card2.jpg" class="img-inicio">
 					<div class="card">
 					
+						<h4>Argentina</h4>
 						<h2>Capilla de Marmol</h2>
-						<p>Y seguimos pedaleando por la austal y conociendo gente bella en la ruta.El tramo hasta Villa O'Higgins lo compartimos con Nico, Feña, Jeremy y Jessica. Cuanto mas mejor! Un acenso de 380 metros nos dejo liquidados antes de llegar a Yungay... 
-				
+						<h6>04 junio,2020</h6>
+						<p>Y seguimos pedaleando por la austal y conociendo gente bella en la ruta.El tramo hasta Villa O'Higgins lo compartimos con Nico, Feña, Jeremy y Jessica. Cuanto mas mejor! Un acenso de 380 metros nos dejo liquidados antes de llegar a Yungay[...] 
+						
+						</p>
+						<a href="#" class="btn">Ver mas&nbsp;<i class="fa fa-angle-double-right"></i></a>
+					</div>
+				</article>	
+				<article class="new">
+					<img src="img/card1.jpg" class="img-inicio">
+					<div class="card">
+					
+						<h4>Argentina</h4>
+						<h2>Capilla de Marmol</h2>
+						<h6>04 junio,2020</h6>
+						<p>Y seguimos pedaleando por la austal y conociendo gente bella en la ruta.El tramo hasta Villa O'Higgins lo compartimos con Nico, Feña, Jeremy y Jessica. Cuanto mas mejor! Un acenso de 380 metros nos dejo liquidados antes de llegar a Yungay[...] 
+						
 						</p>
 						<a href="#" class="btn">Ver mas<i class="fa fa-angle-double-right"></i></a>
 					</div>
 				</article>	
 				<article class="new">
-					<img src="img/card2.jpg" alt="New1">
+					<img src="img/card2.jpg" class="img-inicio">
 					<div class="card">
-					
+						<h4>Argentina</h4>
 						<h2>Capilla de Marmol</h2>
-						<p>Y seguimos pedaleando por la austal y conociendo gente bella en la ruta.El tramo hasta Villa O'Higgins lo compartimos con Nico,
-						Feña, Jeremy y Jessica. Cuanto mas mejor! Un acenso de 380 metros nos dejo liquidados antes de llegar a Yungay... </p>
-						<a href="#" class="btn">Ver mas<i class="fa fa-angle-double-right"></i></a>
-					</div>
-				</article>	
-				<article class="new">
-					<img src="img/card1.jpg" alt="New1">
-					<div class="card">
-					
-						<h2>Capilla de Marmol</h2>
-						<p>Y seguimos pedaleando por la austal y conociendo gente bella en la ruta.El tramo hasta Villa O'Higgins lo compartimos con Nico,
-						Feña, Jeremy y Jessica. Cuanto mas mejor! Un acenso de 380 metros nos dejo liquidados antes de llegar a Yungay... </p>
-						<a href="#" class="btn">Ver mas<i class="fa fa-angle-double-right"></i></a>
-					</div>
-				</article>	
-				<article class="new">
-					<img src="img/card2.jpg" alt="New1">
-					<div class="card">
-					
-						<h2>Capilla de Marmol</h2>
-						<p>Y seguimos pedaleando por la austal y conociendo gente bella en la ruta.El tramo hasta Villa O'Higgins lo compartimos con Nico,
-						Feña, Jeremy y Jessica. Cuanto mas mejor! Un acenso de 380 metros nos dejo liquidados antes de llegar a Yungay... </p>
-						<a href="#" class="btn">Ver mas<i class="fa fa-angle-double-right"></i></a>
-					</div>
-				</article>	
-				
-					
-		</div>
-		
-		<!--   CARDS DOS -->
-		<div class="news-cards">
-		
-				<article class="new">
-					<img src="img/card1.jpg" alt="New1">
-					<div class="card">
-					
-						<h2>Capilla de Marmol</h2>
-						<p>Y seguimos pedaleando por la austal y conociendo gente bella en la ruta.El tramo hasta Villa O'Higgins lo compartimos con Nico, Feña, Jeremy y Jessica. Cuanto mas mejor! Un acenso de 380 metros nos dejo liquidados antes de llegar a Yungay... 
-				
+						<h6>04 junio,2020</h6>
+						<p>Y seguimos pedaleando por la austal y conociendo gente bella en la ruta.El tramo hasta Villa O'Higgins lo compartimos con Nico, Feña, Jeremy y Jessica. Cuanto mas mejor! Un acenso de 380 metros nos dejo liquidados antes de llegar a Yungay[...] 
+						
 						</p>
-						<a href="#" class="btn">Ver mas<i class="fa fa-angle-double-right"></i></a>
-					</div>
-				</article>	
-				<article class="new">
-					<img src="img/card2.jpg" alt="New1">
-					<div class="card">
-					
-						<h2>Capilla de Marmol</h2>
-						<p>Y seguimos pedaleando por la austal y conociendo gente bella en la ruta.El tramo hasta Villa O'Higgins lo compartimos con Nico,
-						Feña, Jeremy y Jessica. Cuanto mas mejor! Un acenso de 380 metros nos dejo liquidados antes de llegar a Yungay... </p>
-						<a href="#" class="btn">Ver mas<i class="fa fa-angle-double-right"></i></a>
-					</div>
-				</article>	
-				<article class="new">
-					<img src="img/card1.jpg" alt="New1">
-					<div class="card">
-					
-						<h2>Capilla de Marmol</h2>
-						<p>Y seguimos pedaleando por la austal y conociendo gente bella en la ruta.El tramo hasta Villa O'Higgins lo compartimos con Nico,
-						Feña, Jeremy y Jessica. Cuanto mas mejor! Un acenso de 380 metros nos dejo liquidados antes de llegar a Yungay... </p>
-						<a href="#" class="btn">Ver mas<i class="fa fa-angle-double-right"></i></a>
-					</div>
-				</article>	
-				<article class="new">
-					<img src="img/card2.jpg" alt="New1">
-					<div class="card">
-					
-						<h2>Capilla de Marmol</h2>
-						<p>Y seguimos pedaleando por la austal y conociendo gente bella en la ruta.El tramo hasta Villa O'Higgins lo compartimos con Nico,
-						Feña, Jeremy y Jessica. Cuanto mas mejor! Un acenso de 380 metros nos dejo liquidados antes de llegar a Yungay... </p>
-						<a href="#" class="btn">Ver mas<i class="fa fa-angle-double-right"></i></a>
+						<a href="#" class="btn">Ver mas&nbsp;<i class="fa fa-angle-double-right"></i></a>
 					</div>
 				</article>	
 				
-				
+					<article class="new">
+					<img src="img/card1.jpg" class="img-inicio">
+					<div class="card">
+						<h4>Argentina</h4>
+						<h2>Capilla de Marmol</h2>
+						<h6>04 junio,2020</h6>
+						<p>Y seguimos pedaleando por la austal y conociendo gente bella en la ruta.El tramo hasta Villa O'Higgins lo compartimos con Nico, Feña, Jeremy y Jessica. Cuanto mas mejor! Un acenso de 380 metros nos dejo liquidados antes de llegar a Yungay[...] 
+						
+						</p>
+						<a href="#" class="btn">Ver mas&nbsp;<i class="fa fa-angle-double-right"></i></a>
+					</div>
+				</article>	
+				<article class="new">
+					<img src="img/card2.jpg" class="img-inicio">
+					<div class="card">
 					
-		</div>
+						<h4>Argentina</h4>
+						<h2>Capilla de Marmol</h2>
+						<h6>04 junio,2020</h6>
+						<p>Y seguimos pedaleando por la austal y conociendo gente bella en la ruta.El tramo hasta Villa O'Higgins lo compartimos con Nico, Feña, Jeremy y Jessica. Cuanto mas mejor! Un acenso de 380 metros nos dejo liquidados antes de llegar a Yungay[...] 
+						
+						</p>
+						<a href="#" class="btn">Ver mas&nbsp;<i class="fa fa-angle-double-right"></i></a>
+					</div>
+				</article>	
+				<article class="new">
+					<img src="img/card1.jpg" class="img-inicio">
+					<div class="card">
+					
+						<h4>Argentina</h4>
+						<h2>Capilla de Marmol</h2>
+						<h6>04 junio,2020</h6>
+						<p>Y seguimos pedaleando por la austal y conociendo gente bella en la ruta.El tramo hasta Villa O'Higgins lo compartimos con Nico, Feña, Jeremy y Jessica. Cuanto mas mejor! Un acenso de 380 metros nos dejo liquidados antes de llegar a Yungay[...] 
+						
+						</p>
+						<a href="#" class="btn">Ver mas&nbsp;<i class="fa fa-angle-double-right"></i></a>
+					</div>
+				</article>	
+				<article class="new">
+					<img src="img/card2.jpg" class="img-inicio">
+					<div class="card">
+					
+						<h4>Argentina</h4>
+						<h2>Capilla de Marmol</h2>
+						<h6>04 junio,2020</h6>
+						<p>Y seguimos pedaleando por la austal y conociendo gente bella en la ruta.El tramo hasta Villa O'Higgins lo compartimos con Nico, Feña, Jeremy y Jessica. Cuanto mas mejor! Un acenso de 380 metros nos dejo liquidados antes de llegar a Yungay[...] 
+						
+						</p>
+						<a href="#" class="btn">Ver mas&nbsp;<i class="fa fa-angle-double-right"></i></a>
+					</div>
+				</article>	
+				
 		<!--	BANNER	DOS	-->
+		
+				
+					
+		</article>
 		<aside class="main-aside">
-		<aside class="cards-banner-two">
+			
 
 				<div class="content">
 				
-				<h2>Viaja, Vivi, Disfruta!</h2>
+				<h3>Viaja, Vivi, Disfruta!</h3>
 				<p>Queres disfrutar y no sabes como? Queres fumar un porro y no tenes? Tenes ganas de drogarte
 				y el transa de la equina se hace el otro y no te quiere vender? LLamanos...</p>
-				<a href="#" class="btn">Learn More<i class="fa fa-angle-double-right"></i> </a>
-				
+				<a href="#" class="btn">Learn More&nbsp;<i class="fa fa-angle-double-right"></i> </a>
+					
 				</div>
+			
 		</aside>
-		<!--	BANNER	-->
-		<aside class="cards-banner-one">
-			<div	class="content">
-				
-				<h2>Viaja, Vivi, Disfruta!</h2>
-				<p>Queres disfrutar y no sabes como? Queres fumar un porro y no tenes? Tenes ganas de drogarte
-				y el transa de la equina se hace el otro y no te quiere vender? LLamanos...</p>
-				<a href="#" class="btn">Learn More<i class="fa fa-angle-double-right"></i> </a>
-				
-			</div>
-		</aside>
-		</aside>
+		
 		
 		</main>
 		<!--		SOCIAL		-->
 		<section class="follow">
 		
-				<p>Segui a <span>12km por hora</span></p>
+				<p>Segui a <span>Rutas Infinitas</span></p>
 				<div >
 					<a href=¨#¨>
 						<i class="fab fa-facebook-f"></i>
